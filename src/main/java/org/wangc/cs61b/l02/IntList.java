@@ -89,10 +89,10 @@ public class IntList {
     }
 
     public static IntList catenate(IntList a, IntList b) {
-        if(a == null){
+        if (a == null) {
             return b;
         }
-        return new IntList(a.first,catenate(a.rest,b));
+        return new IntList(a.first, catenate(a.rest, b));
     }
 
     @Override
